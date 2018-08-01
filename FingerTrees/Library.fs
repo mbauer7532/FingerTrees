@@ -43,8 +43,6 @@ module FingerTrees =
            deep (D2 (a, b)) (addLeft (Node3 (c, d, e)) m) sf
        | Deep (pr, m, sf) -> deep (digitAddLeft a pr) m sf
 
-    let inline (<^) (ft: 'a FingerTree) (a: 'a): 'a FingerTree = addLeft a ft
-
     let addLeftToFingerTree (ls: 'a List) ft = List.foldBack addLeft ls ft
 
     let rec addRight<'a> (a: 'a) (ft: FingerTree<'a>): FingerTree<'a> =
@@ -54,8 +52,6 @@ module FingerTrees =
        | Deep (pr, m, D4 (e, d, c, b)) ->
            deep pr (addRight (Node3 (e, d, c)) m) (D2 (b, a))
        | Deep (pr, m, sf) -> deep pr m (digitAddRight a sf)
-
-    let inline (^<) (a: 'a) (ft: 'a FingerTree): 'a FingerTree = addRight a ft
 
     let addRightToFingerTree (ls: 'a List) ft = List.fold (rev addRight) ft ls
     
