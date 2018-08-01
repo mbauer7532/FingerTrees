@@ -2,8 +2,6 @@ namespace FingerTrees
 
 module FingerTrees =
 
-    let rev f = fun x y -> f y x
-
     type 'a FingerTree =
         | Empty
         | Single of 'a
@@ -53,7 +51,7 @@ module FingerTrees =
            deep pr (addRight (Node3 (e, d, c)) m) (D2 (b, a))
        | Deep (pr, m, sf) -> deep pr m (digitAddRight a sf)
 
-    let addRightToFingerTree (ls: 'a List) ft = List.fold (rev addRight) ft ls
+    let addRightToFingerTree (ls: 'a List) ft = List.fold (fun acc x -> addRight x acc) ft ls
     
     let digitToTree digit =
         match digit with
