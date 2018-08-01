@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "FingerTrees", "FingerTrees\FingerTrees.fsproj", "{AFFAEF42-5A1A-488B-A89E-8AD36C251620}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "startup", "startup\startup.fsproj", "{7E9BC4A1-3C3F-41B7-9249-556852439859}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AFFAEF42-5A1A-488B-A89E-8AD36C251620}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFFAEF42-5A1A-488B-A89E-8AD36C251620}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFFAEF42-5A1A-488B-A89E-8AD36C251620}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFFAEF42-5A1A-488B-A89E-8AD36C251620}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E9BC4A1-3C3F-41B7-9249-556852439859}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E9BC4A1-3C3F-41B7-9249-556852439859}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E9BC4A1-3C3F-41B7-9249-556852439859}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E9BC4A1-3C3F-41B7-9249-556852439859}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {072B7336-49DB-47E2-B5C8-ACC33134717D}
+	EndGlobalSection
+EndGlobal
